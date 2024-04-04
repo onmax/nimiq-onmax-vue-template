@@ -1,13 +1,14 @@
 import { presetNimiq } from 'nimiq-css'
-import { defineConfig, presetUno } from 'unocss'
+import { defineConfig, presetAttributify, presetUno } from 'unocss'
 import { presetRemToPx } from '@unocss/preset-rem-to-px'
 
 export default defineConfig({
   presets: [
-    presetUno(),
+    presetUno({ attributifyPseudo: true }),
     presetNimiq({
       utilities: true,
     }),
-    presetRemToPx(),
+    presetRemToPx({ baseFontSize: 4 }),
+    presetAttributify(),
   ],
 })
