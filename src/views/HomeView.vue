@@ -25,18 +25,6 @@ import WelcomeItem from '@/components/WelcomeItem.vue'
     </p>
   </WelcomeItem>
 
-  <WelcomeItem icon="i-nimiq:tools" mt-40>
-    <template #heading>
-      Tooling
-    </template>
-
-    <p class="text-neutral-800">
-      Nimiq's
-      <a href="https://onmax.github.io/nimiq-developer-center/" target="_blank" rel="noopener">official documentation</a>
-      provides you with all information you need to get started.
-    </p>
-  </WelcomeItem>
-
   <WelcomeItem icon="i-nimiq:icons-lg-palette" mt-40>
     <template #heading>
       UI
