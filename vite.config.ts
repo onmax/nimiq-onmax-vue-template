@@ -6,6 +6,7 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 import UnoCSS from 'unocss/vite'
 import wasm from 'vite-plugin-wasm'
 import topLevelAwait from 'vite-plugin-top-level-await'
+import checker from 'vite-plugin-checker'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,6 +16,7 @@ export default defineConfig({
     UnoCSS(),
     wasm(),
     topLevelAwait(),
+    checker({ typescript: true, vueTsc: true }),
   ],
   resolve: {
     alias: {
