@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { storeToRefs } from 'pinia'
 import WelcomeItem from '@/components/WelcomeItem.vue'
+import { useNetwork } from '@/stores/network'
+
+const { consensus, head } = storeToRefs(useNetwork())
 </script>
 
 <template>
@@ -20,9 +24,19 @@ import WelcomeItem from '@/components/WelcomeItem.vue'
       Web Client
     </template>
 
-    <p class="text-neutral-800">
-      Ready to connect to the network. You can check the <a href="https://onmax.github.io/nimiq-developer-center/build/web-client/index" target="_blank" rel="noopener">web client</a> to see the network in action.
-    </p>
+    <div>
+      <div flex="~ gap-12">
+        <span ghost-btn capitalize flex="~ gap-4" w-max>
+          <div v-if="consensus !== 'established'" i-nimiq:spinner />
+          {{ consensus }}
+        </span>
+        <span v-if="head" ghost-btn>{{ head?.slice(0, 8) }}...{{ head?.slice(-8) }}</span>
+      </div>
+
+      <p class="text-neutral-800" mt-12>
+        Ready to connect to the network. You can check the <a href="https://onmax.github.io/nimiq-developer-center/build/web-client/index" target="_blank" rel="noopener">web client</a> to see the network in action.
+      </p>
+    </div>
   </WelcomeItem>
 
   <WelcomeItem icon="i-nimiq:icons-lg-palette" mt-40>

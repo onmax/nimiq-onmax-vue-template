@@ -13,6 +13,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@nimiq/core-web": "2.0.0-alpha.20.3",
     "@unocss/preset-rem-to-px": "0.59.0-beta.1",
     "@unocss/reset": "0.59.0-beta.1",
     "@vueuse/core": "^10.9.0",
@@ -36,7 +37,9 @@
     "typescript": "~5.4.3",
     "unocss": "0.59.0-beta.1",
     "vite": "^5.2.8",
+    "vite-plugin-top-level-await": "^1.4.1",
     "vite-plugin-vue-devtools": "^7.0.25",
+    "vite-plugin-wasm": "^3.3.0",
     "vue-tsc": "^2.0.10"
   },
   "simple-git-hooks": {
