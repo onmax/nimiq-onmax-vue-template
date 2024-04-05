@@ -38,7 +38,7 @@ pnpm i
 ## Features
 
 - Includes `@nimiq/core@next` and connects to the Nimiq Albatross Testnet.
-- Uses `nimiq-css` and `Nimiq Icons` for the UI.
+- Uses `nimiq-css` and `Nimiq Icons` for the UI. Supports dark mode!
 - Uses `vue-router`, `vueuse` and `pinia`
 - Added `unocss` with `attributify` mode.
 
