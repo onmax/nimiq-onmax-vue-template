@@ -1,8 +1,10 @@
 {
   "name": "nimiq-vue-template",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
+  "description": "A Vue 3 template with Nimiq CSS and Nimiq Core Web",
+  "author": "onmax",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",

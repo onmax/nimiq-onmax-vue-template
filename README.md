@@ -26,14 +26,19 @@ Create a repo from this template on GitHub. You can use the button "Use this tem
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit onmax/nimiq-vue-template my-awesome-nimiq-app 
+npx degit onmax/nimiq-vue-template my-awesome-nimiq-app
 cd my-awesome-nimiq-app
 pnpm i
 ```
 
-> [!NOTE]  
+> [!NOTE]
 > If you don't have pnpm installed, run: `npm install -g pnpm`.
 > Alternatively, you can delete `pnpm-lock.yaml` and use npm or yarn
+
+Now make sure to update the following files:
+
+- `package.json`: Update the `name`, `version`, `description`, `author`, `repository`, `bugs`, and `homepage` fields.
+- `vite.config.ts`: Update the `base` field to match your repository name or custom domain.
 
 ## Features
 
