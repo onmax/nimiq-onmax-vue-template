@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia'
-import WelcomeItem from '@/components/WelcomeItem.vue'
-import { useNetwork } from '@/stores/network'
-
-const { consensus, head } = storeToRefs(useNetwork())
+const { consensus, head } = storeToRefs(useNimiqNetwork())
 </script>
 
 <template>

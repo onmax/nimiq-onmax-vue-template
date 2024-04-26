@@ -28,6 +28,7 @@ export default defineConfig({
         '@vueuse/head',
         '@vueuse/core',
         VueRouterAutoImports,
+        'pinia',
       ],
       dts: 'src/auto-imports.d.ts',
       dirs: [
