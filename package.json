@@ -13,7 +13,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nimiq/core-web": "2.0.0-alpha.20.3",
+    "@nimiq/core-web": "2.0.0-alpha.21.0",
     "@unocss/preset-rem-to-px": "0.59.0-beta.1",
     "@unocss/reset": "0.59.0-beta.1",
     "@vueuse/core": "^10.9.0",

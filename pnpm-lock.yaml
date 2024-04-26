@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@nimiq/core-web':
-    specifier: 2.0.0-alpha.20.3
-    version: 2.0.0-alpha.20.3
+    specifier: 2.0.0-alpha.21.0
+    version: 2.0.0-alpha.21.0
   '@unocss/preset-rem-to-px':
     specifier: 0.59.0-beta.1
     version: 0.59.0-beta.1
@@ -877,8 +877,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@nimiq/core-web@2.0.0-alpha.20.3:
-    resolution: {integrity: sha512-bH71nfWlWTE0S0nRjCyK3hCsBTZMROU8jVaoXtRUdGZx/GjyT7LQ4jx5nEWhw5tuPDVzH+dlvFGK7GGgftpXVw==}
+  /@nimiq/core-web@2.0.0-alpha.21.0:
+    resolution: {integrity: sha512-MN78xNEH6mmFpV2bLGhbKYqKDhdXZVo4WWMOKjhcGcY8WBg6W8DOiyQVRW1rwQyB3aq1ep0U3cwrJbOLU7nqwg==}
     dependencies:
       comlink: 4.4.1
       websocket: 1.0.34

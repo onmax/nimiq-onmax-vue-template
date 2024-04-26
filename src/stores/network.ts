@@ -1,14 +1,14 @@
 import { onMounted, ref } from 'vue'
 import { defineStore } from 'pinia'
-import type { ConsensusState } from '@nimiq/core-web'
-import { Client, ClientConfiguration } from '@nimiq/core-web'
+import init, { Client, ClientConfiguration, type ConsensusState } from '@nimiq/core-web/web'
 
-export const useNetwork = defineStore('network', () => {
-  const config = new ClientConfiguration()
-  config.network('testalbatross')
+export const useNimiqNetwork = defineStore('network', () => {
   const client = ref<Client>()
 
   onMounted(async () => {
+    await init()
+    const config = new ClientConfiguration()
+    config.network('devalbatross')
     client.value = await Client.create(config.build())
     initListeners()
   })
