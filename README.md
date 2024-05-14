@@ -47,6 +47,10 @@ Now make sure to update the following files:
 - Uses `vue-router`, `vueuse` and `pinia`
 - Added `unocss` with `attributify` mode.
 
+## Other templates
+
+- [Nuxt Nimiq Template](https://github.com/onmax/nimiq-nuxt-template)
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar).
