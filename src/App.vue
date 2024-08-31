@@ -4,12 +4,12 @@ const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <header flex="~ gap-32 col lg:row items-center" max-h-screen px-32 py-40 max-w-700 mx-auto>
+  <header flex="~ gap-32 col lg:row items-center" mx-auto max-h-screen max-w-700 px-32 py-40>
     <!-- Change the color of the logo for dark mode! -->
-    <div i-nimiq:logos-nimiq-vertical dark:i-nimiq:logos-nimiq-white-vertical text-90 />
+    <div i-nimiq:logos-nimiq-vertical text-90 dark:i-nimiq:logos-nimiq-white-vertical />
 
     <div>
-      <h1 font-bold text-32>
+      <h1 text-32 font-bold>
         You did it!
       </h1>
 
@@ -20,21 +20,21 @@ const toggleDark = useToggle(isDark)
       </p>
 
       <nav flex="~ gap-32 wrap" mt-12>
-        <RouterLink to="/" arrow>
+        <RouterLink to="/" nq-arrow>
           Home
         </RouterLink>
-        <RouterLink to="/about" arrow>
+        <RouterLink to="/about" nq-arrow>
           About
         </RouterLink>
 
-        <button pill-blue pill-sm ml-auto @click="() => toggleDark()">
+        <button nq-pill-sm ml-auto nq-pill-blue @click="() => toggleDark()">
           Change theme
         </button>
       </nav>
     </div>
   </header>
 
-  <main max-w-700 mx-auto pt-64 pb-92>
+  <main mx-auto max-w-700 pb-92 pt-64>
     <RouterView />
   </main>
 </template>

@@ -22,11 +22,11 @@ const { consensus, head } = storeToRefs(useNimiqNetwork())
 
     <div>
       <div flex="~ gap-12">
-        <span ghost-btn capitalize flex="~ gap-4" w-max>
+        <span flex="~ gap-4" w-max capitalize nq-ghost-btn>
           <div v-if="consensus !== 'established'" i-nimiq:spinner />
           {{ consensus }}
         </span>
-        <span v-if="head" ghost-btn>{{ head?.slice(0, 8) }}...{{ head?.slice(-8) }}</span>
+        <span v-if="head" nq-ghost-btn>{{ head?.slice(0, 8) }}...{{ head?.slice(-8) }}</span>
       </div>
 
       <p class="text-neutral-800" mt-12>

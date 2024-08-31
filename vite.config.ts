@@ -55,6 +55,6 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    exclude: ['@nimiq/core-web'],
+    exclude: ['@nimiq/core'],
   },
 })

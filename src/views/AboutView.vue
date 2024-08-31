@@ -1,5 +1,5 @@
 <template>
-  <div class="prose">
+  <div class="nq-prose">
     <h1 mb-32 mt-48>
       This is an about page
     </h1>

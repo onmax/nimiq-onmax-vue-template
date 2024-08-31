@@ -7,6 +7,7 @@ export default defineConfig({
     presetUno({ attributifyPseudo: true }),
     presetNimiq({
       utilities: true,
+      attributifyUtilities: true,
     }),
     presetRemToPx({ baseFontSize: 4 }),
     presetAttributify(),
